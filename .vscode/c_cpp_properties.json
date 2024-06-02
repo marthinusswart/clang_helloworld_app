@@ -1,0 +1,37 @@
+{
+    "env": {
+        "myIncludePath": [
+            "${workspaceFolder}",
+            "${workspaceFolder}/include",
+            "${workspaceFolder}/src"
+        ],
+        "myDefines": [
+            "DEBUG",
+            "MY_FEATURE=1"
+        ]
+    },
+    "configurations": [
+        {
+            "name": "Linux",
+            "compilerPath": "/usr/bin/gcc",
+            "compilerArgs": [
+                "-m32"
+            ],
+            "intelliSenseMode": "${default}",
+            "includePath": [
+                "${myIncludePath}",
+                "/usr/include",
+                "/usr/include/x86_64-linux-gnu/c++/9",
+                "/usr/include/x86_64-linux-gnu"                
+            ],
+            "defines": [
+                "${myDefines}"
+            ],
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++14",
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ],
+    "version": 4,
+    "enableConfigurationSquiggles": true
+}
